@@ -70,7 +70,7 @@ namespace Bravely_Default_Save_Editor {
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e) {
             filePath = openFileDialog1.FileName;
             string fileName = openFileDialog1.SafeFileName;
-            if (fileName.Equals("COLONY0.sav") || fileName.Equals("COLONY1.sav") || fileName.Equals("COLONY2.sav")) {
+            if (fileName.Equals("BD2COLONY0.sav") || fileName.Equals("BD2COLONY1.sav") || fileName.Equals("BD2COLONY2.sav")) {
                 saveToolStripMenuItem.Enabled = true;
                 using (FileStream str = File.OpenRead(filePath)) {
                     for (int i = 0; i < 11; i++) {// 11 buildings, so i < 11
